@@ -7,6 +7,9 @@ class gui:
 	def __init__(self):
 		pass
 	def display(self):
+		self.keyword()
+		self.url()
+		self.csv()
 		system("scrapy crawl flagger")
 	def interface(self):
 		# creating a new tkinter window 
