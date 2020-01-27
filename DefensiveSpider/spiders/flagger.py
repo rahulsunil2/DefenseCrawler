@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 import scrapy
 
-
 class FlaggerSpider(scrapy.Spider):
     name = 'flagger'
-    allowed_domains = ['mbcet.ac.in']
-    start_urls = ['https://mbcet.ac.in/']
+    f = open("url.txt", "r")
+    start_urls = [f.readline()]
+    allowed_domains = [f.readline()]
 
     def parse(self, response):
     	next_page_urls = response.css('a::attr(href)').extract()
