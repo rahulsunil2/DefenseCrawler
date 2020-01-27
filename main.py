@@ -7,7 +7,7 @@ class gui:
 	def __init__(self):
 		pass
 	def display(self):
-		self.keyword()
+		self.keywords()
 		self.url()
 		self.csv()
 		system("scrapy crawl flagger")
